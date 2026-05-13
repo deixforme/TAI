@@ -11,7 +11,7 @@ if ($res = mysqli_query($mysqli, $q2)) {
 
 $wybrane_rodzaj = isset($_POST['rodzaj']) ? $_POST['rodzaj'] : null;
 $wyniki = [];
-if ($wybrane_rodzaj !== null && $wybrane_rodzaj !== "") {
+if ($wybrane_rodzaj22 !== null && $wybrane_rodzaj !== "") {
   $rodzajEsc = mysqli_real_escape_string($mysqli, $wybrane_rodzaj);
   $q1 = "SELECT Rodzaj, Nazwa, Gramatura, Cena FROM wyroby WHERE Rodzaj = '$rodzajEsc';";
   if ($res = mysqli_query($mysqli, $q1)) {
